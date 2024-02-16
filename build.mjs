@@ -8,11 +8,12 @@ await build({
   bundle: true,
   minify: true,
   outdir: 'dist',
-  target: 'chrome100',
+  target: 'es2020',
   format: 'esm',
   loader: {
     '.ttf': 'file',
   },
+  legalComments: 'eof'
 });
 
 console.log('build done.');
