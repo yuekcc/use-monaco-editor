@@ -10,9 +10,10 @@
     
     "strict": false,
     "strictFunctionTypes": true,
+    "strictNullChecks": false,
     
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
 

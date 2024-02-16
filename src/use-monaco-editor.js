@@ -22,6 +22,10 @@ function removeWorkerConfig() {
 
 export function useMonacoEditor(containerOrSelector) {
   let container = null;
+
+  /**
+   * @type {import('./use-monaco-editor').EditorInstanceRef}
+   */
   let editor = null;
 
   function initEditor() {
@@ -44,8 +48,13 @@ export function useMonacoEditor(containerOrSelector) {
     removeWorkerConfig();
   }
 
+  function getEditorInstance() {
+    return editor;
+  }
+
   return {
     initEditor,
     disposeEditor,
+    getEditorInstance,
   };
 }
